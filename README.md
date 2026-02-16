@@ -38,5 +38,11 @@ create table retail_sales(
 			price_per_unit int,
 			cogs float,
 			total_sale float
-);``
+);
+```
+##2. Data Cleaning & Exploratori
+1. Record Count: Calculate the total number of rows contained in the dataset.
+2. Customer Count: Determine the number of distinct customers present in the dataset.
+3. Category Count: Identify all unique product categories available in the dataset.
+4. Null Value Check: Examine the dataset for any null or missing values and remove records with incomplete data.
 
