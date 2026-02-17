@@ -40,7 +40,7 @@ create table retail_sales(
 			total_sale float
 );
 ```
-##2. Data Cleaning & Exploratori
+## 2. Data Cleaning & Exploratori
 1. Record Count: Calculate the total number of rows contained in the dataset.
 2. Customer Count: Determine the number of distinct customers present in the dataset.
 3. Category Count: Identify all unique product categories available in the dataset.
