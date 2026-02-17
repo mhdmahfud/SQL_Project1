@@ -74,7 +74,7 @@ where rs.transactions_id  is null
 # 3. Data Analysis & Findings
 The following SQL queries were developed to answer specific business questions:
 
-## 1 Write a SQL query to retrieve all columns for sales mode on '2022-11-05'
+### 1 Write a SQL query to retrieve all columns for sales mode on '2022-11-05'
 
 ```sql
 select * from retail_sales rs 
