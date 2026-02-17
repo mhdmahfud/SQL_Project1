@@ -46,3 +46,38 @@ create table retail_sales(
 3. Category Count: Identify all unique product categories available in the dataset.
 4. Null Value Check: Examine the dataset for any null or missing values and remove records with incomplete data.
 
+```SQL
+-- Data Exploratori & Cleaning
+select * from retail_sales rs ;
+
+select count(*) from retail_sales rs ;
+select count(distinct customer_id) from retail_sales rs ;
+select distinct rs.category  from retail_sales rs; 
+
+SELECT * FROM retail_sales
+WHERE 
+    sale_date IS NULL OR sale_time IS NULL OR customer_id IS NULL OR 
+    gender IS NULL OR age IS NULL OR category IS NULL OR 
+    quantity IS NULL OR price_per_unit IS NULL OR cogs IS NULL;
+
+drop table if exists retail_sales;
+select * from retail_sales rs 
+where rs.transactions_id  is null
+	or rs.sale_date is null
+	or rs.sale_time is null
+	or rs.quantity is null
+	or rs.price_per_unit  is null
+	or rs.cogs is null
+	or rs.total_sale is null;
+```
+
+# 3. Data Analysis & Findings
+The following SQL queries were developed to answer specific business questions:
+
+## 1 Write a SQL query to retrieve all columns for sales mode on '2022-11-05'
+
+```sql
+select * from retail_sales rs 
+where sale_date = "2022-11-05";
+```
+
